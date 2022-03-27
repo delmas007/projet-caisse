@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PageDaccueilController">
+   <children>
+      <AnchorPane prefHeight="560.0" prefWidth="223.0" style="-fx-background-color: #077225;">
+         <children>
+            <Pane prefHeight="114.0" prefWidth="223.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="446.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="59.0" prefHeight="60.0" prefWidth="189.0" text="O' Prix Cassé" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Viner Hand ITC" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="112.0" prefHeight="4.0" prefWidth="223.0" />
+                  <ImageView fitHeight="120.0" fitWidth="216.0" layoutX="5.0" layoutY="-23.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/spmer.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="caisse" alignment="CENTER" layoutX="22.0" layoutY="154.0" mnemonicParsing="false" onAction="#Fcaisse" prefHeight="30.0" prefWidth="183.0" text="CAISSE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="historique" alignment="CENTER" layoutX="20.0" layoutY="232.0" mnemonicParsing="false" onAction="#Fhistorique" prefHeight="30.0" prefWidth="183.0" text="HISTORIQUE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="ajouter" layoutX="20.0" layoutY="308.0" mnemonicParsing="false" onAction="#Fajouter" prefHeight="30.0" prefWidth="183.0" text="AJOUT PRODUIT">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="modifier" alignment="CENTER" layoutX="22.0" layoutY="389.0" mnemonicParsing="false" onAction="#Fmodifier" prefHeight="30.0" prefWidth="183.0" text="SUPPRIMER PRODUIT">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="176.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/CAISSE.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="168.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Historique.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="176.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ajout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="33.0" layoutX="171.0" layoutY="393.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/supprimer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="223.0" prefHeight="114.0" prefWidth="497.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="17.0" layoutY="40.0" prefHeight="34.0" prefWidth="464.0" text="~BIENVENUE SUR LA CAISSE DES PRODUITS~" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="28.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-3.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="0.0" />
+            <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="441.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Approve_icon.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="445.0" fitWidth="515.0" layoutX="224.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MAN%203.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="223.0" layoutY="512.0" prefHeight="48.0" prefWidth="497.0" style="-fx-background-color: #ffbb00;">
+         <children>
+            <Label layoutX="142.0" layoutY="16.0" text="EXIGEZ TOUJOURS VOTRE REçU SVP !!!">
+               <font>
+                  <Font name="Bodoni MT Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

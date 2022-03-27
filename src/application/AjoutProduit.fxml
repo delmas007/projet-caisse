@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aj" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjoutProduitController">
+   <children>
+      <ImageView fitHeight="437.0" fitWidth="691.0" layoutY="88.0" opacity="0.31" pickOnBounds="true">
+         <image>
+            <Image url="@../images/MAN%206.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="89.0" prefWidth="691.0" style="-fx-background-color: orange;">
+         <children>
+            <Button fx:id="accueil" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" onAction="#Facceuil" prefHeight="22.0" prefWidth="107.0" text="ACCUEIL">
+               <font>
+                  <Font name="Cooper Black" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="203.0" layoutY="30.0" text="AJOUT DE PRODUITS" underline="true">
+               <font>
+                  <Font name="Stencil" size="33.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="38.0" layoutX="554.0" layoutY="30.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/ajout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="16.0" layoutX="101.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icone.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="119.0" layoutY="98.0" text="Code Produit :" underline="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="151.0" text="Nom de produit :" underline="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="151.0" text="Prix du Produit :" underline="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="262.0" layoutY="187.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: red;" text="AJOUTER" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font></Button>
+      <TextField fx:id="nomP" layoutX="146.0" layoutY="148.0" prefHeight="25.0" prefWidth="150.0" promptText="Nom de produit " style="-fx-background-color: green;" />
+      <TextField fx:id="prixP" layoutX="439.0" layoutY="148.0" prefHeight="25.0" prefWidth="177.0" promptText="Prix du Produit " style="-fx-background-color: green;" />
+      <TextField fx:id="codeP" layoutX="236.0" layoutY="95.0" prefHeight="25.0" prefWidth="237.0" promptText="Code Produit " style="-fx-background-color: green;" />
+      <TableView fx:id="table" layoutX="56.0" layoutY="230.0" prefHeight="285.0" prefWidth="561.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="170.66665077209473" text="IdProduit" />
+            <TableColumn fx:id="nom" prefWidth="199.3333282470703" text="NomProduit" />
+            <TableColumn fx:id="prix" prefWidth="190.66665649414062" text="PrixProduit" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
